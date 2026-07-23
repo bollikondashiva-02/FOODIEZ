@@ -1,0 +1,246 @@
+{
+  "users": [
+    {
+      "name": "shiva",
+      "email": "shivakumarbollikonda08@gmail.com",
+      "password": "12345",
+      "id": "m5aLP12I9Gc"
+    },
+    {
+      "name": "sujith",
+      "email": "sujith@gmail,.com",
+      "password": "123456",
+      "id": "W6OXjECgekk"
+    },
+    {
+      "name": "abhiram",
+      "email": "abhiram02@gmail.com",
+      "password": "12345",
+      "id": "yyh297UK9zU"
+    },
+    {
+      "name": "charan",
+      "email": "charan1@gmail.com",
+      "password": "123",
+      "id": "jxiTiLL8SB0"
+    },
+    {
+      "name": "fftyfyt",
+      "email": "cactd@123",
+      "password": "123",
+      "id": "HwMQYeaV1wI"
+    },
+    {
+      "name": "shiva",
+      "email": "shiva123@gmail.com",
+      "password": "970",
+      "id": "xU7ElZZ72TI"
+    },
+    {
+      "name": "shiva",
+      "email": "shiva123@gmail.com",
+      "password": "123456",
+      "id": "X7kwrfCTDKk"
+    },
+    {
+      "name": "Rahul",
+      "email": "rahul123@gmail.com",
+      "password": "",
+      "id": "bDbY8sLOw5c"
+    },
+    {
+      "name": "ganesh",
+      "email": "ganesh123@gmail.com",
+      "password": "123",
+      "id": "kereOAhJK-0"
+    },
+    {
+      "name": "rahul",
+      "email": "rahul123@gmail.com",
+      "password": "123",
+      "id": "ySP6or74Prg"
+    },
+    {
+      "name": "yuvaraj",
+      "email": "yuvaraj64@gmail.com",
+      "password": "6465",
+      "id": "wFGbU-bqCmI"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "R1",
+      "name": "Mutton Biryani",
+      "image": "https://i.pinimg.com/1200x/a0/82/4a/a0824ab867756c5165af00168f2e0696.jpg",
+      "price": 349,
+      "rating": 4.9,
+      "time": "2 hours",
+      "category": "Indian",
+      "description": "Aromatic basmati rice layered with tender mutton and traditional spices."
+    },
+    {
+      "id": "R2",
+      "name": "Masala Dosa",
+      "image": "https://i.pinimg.com/1200x/e4/44/6b/e4446bcb4c28caf313a81d73ad33d90f.jpg",
+      "price": 149,
+      "rating": 4.8,
+      "time": "10 min",
+      "category": "South Indian",
+      "description": "Crispy dosa filled with spicy potato masala served with chutney and sambar."
+    },
+    {
+      "id": "R3",
+      "name": "Paneer Tikka",
+      "image": "https://i.pinimg.com/1200x/b5/5d/6f/b55d6f1c767cd0d9b1a60646afeac3e1.jpg",
+      "price": 229,
+      "rating": 4.7,
+      "time": "30 min",
+      "category": "Indian",
+      "description": "Grilled paneer cubes marinated with yogurt and aromatic Indian spices."
+    },
+    {
+      "id": "R4",
+      "name": "Chicken Shawarma",
+      "image": "https://i.pinimg.com/1200x/ba/97/a1/ba97a1356f9c0558217ef509a55638bd.jpg",
+      "price": 199,
+      "rating": 4.8,
+      "time": "30 min",
+      "category": "Middle Eastern",
+      "description": "Juicy grilled chicken wrapped with fresh vegetables and garlic sauce."
+    },
+    {
+      "id": "R5",
+      "name": "Veg Fried Rice",
+      "image": "https://i.pinimg.com/736x/93/88/aa/9388aaf4795600a83b53a3dfb1aee168.jpg",
+      "price": 179,
+      "rating": 4.6,
+      "time": "20 min",
+      "category": "Chinese",
+      "description": "Flavorful fried rice tossed with fresh vegetables and soy sauce."
+    },
+    {
+      "id": "R6",
+      "name": "Grilled Chicken",
+      "image": "https://i.pinimg.com/736x/f4/01/93/f401932495abb10234f97eac74f5a5c6.jpg",
+      "price": 299,
+      "rating": 4.8,
+      "time": "30 min",
+      "category": "Grill",
+      "description": "Perfectly grilled chicken seasoned with herbs and served hot."
+    },
+    {
+      "id": "R7",
+      "name": "Caesar Salad",
+      "image": "https://i.pinimg.com/1200x/11/34/c8/1134c8004a5cf9b8064d97d1ed8da889.jpg",
+      "price": 189,
+      "rating": 4.5,
+      "time": "15 min",
+      "category": "Salad",
+      "description": "Fresh lettuce, croutons, parmesan cheese, and creamy Caesar dressing."
+    },
+    {
+      "id": "R8",
+      "name": "Chicken Momos",
+      "image": "https://i.pinimg.com/736x/01/d3/27/01d327357d68a25aef18b27fc2ebe0e0.jpg",
+      "price": 169,
+      "rating": 4.7,
+      "time": "20 min",
+      "category": "Snacks",
+      "description": "Steamed dumplings stuffed with juicy chicken and served with spicy chutney."
+    },
+    {
+      "id": "R9",
+      "name": "Brownie with Ice Cream",
+      "image": "https://i.pinimg.com/736x/68/79/cf/6879cf9b00834a790ded1d350d0170fe.jpg",
+      "price": 199,
+      "rating": 4.9,
+      "time": "10 min",
+      "category": "Dessert",
+      "description": "Warm chocolate brownie topped with creamy vanilla ice cream."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "REST1",
+      "name": "Paradise Biryani",
+      "image": "https://i.pinimg.com/1200x/db/98/6a/db986a27caef6232868c3b0770637339.jpg",
+      "famousDish": "Chicken Biryani",
+      "rating": 4.8,
+      "location": "Paradise Circle, Secunderabad",
+      "deliveryTime": "30 mins"
+    },
+    {
+      "id": "REST2",
+      "name": "Domino's Pizza",
+      "image": "https://i.pinimg.com/736x/bb/fc/66/bbfc66aa25be451e07771b8219506d76.jpg",
+      "famousDish": "Margherita Pizza",
+      "rating": 4.5,
+      "location": "Kukatpally, Hyderabad",
+      "deliveryTime": "25 mins"
+    },
+    {
+      "id": "REST3",
+      "name": "KFC",
+      "image": "https://i.pinimg.com/1200x/1e/6f/ae/1e6faec7aeefcf8b1b053be4a2687109.jpg",
+      "famousDish": "Hot & Crispy Chicken",
+      "rating": 4.6,
+      "location": "Banjara Hills Road No. 12, Hyderabad",
+      "deliveryTime": "20 mins"
+    },
+    {
+      "id": "REST4",
+      "name": "McDonald's",
+      "image": "https://i.pinimg.com/1200x/b8/f8/a2/b8f8a287d894871419c5b8f2a39ea9b5.jpg",
+      "famousDish": "McAloo Tikki Burger",
+      "rating": 4.4,
+      "location": "Inorbit Mall, Hitech City",
+      "deliveryTime": "20 mins"
+    },
+    {
+      "id": "REST5",
+      "name": "Pizza Hut",
+      "image": "https://i.pinimg.com/1200x/dc/6e/58/dc6e5891adf044a2dfd03cf35eb534f5.jpg",
+      "famousDish": "Veg Supreme Pizza",
+      "rating": 4.5,
+      "location": "Madhapur, Hyderabad",
+      "deliveryTime": "30 mins"
+    },
+    {
+      "id": "REST6",
+      "name": "Bawarchi",
+      "image": "https://i.pinimg.com/736x/0d/3a/89/0d3a8942f3fdef0220928b99c4e6220f.jpg",
+      "famousDish": "Mutton Biryani",
+      "rating": 4.7,
+      "location": "RTC Cross Roads, Hyderabad",
+      "deliveryTime": "35 mins"
+    },
+    {
+      "id": "REST7",
+      "name": "Pista House",
+      "image": "https://i.pinimg.com/736x/de/56/7b/de567b09814a95894f35452bcd3af1c6.jpg",
+      "famousDish": "Hyderabadi Haleem",
+      "rating": 4.7,
+      "location": "Charminar Road, Hyderabad",
+      "deliveryTime": "30 mins"
+    },
+    {
+      "id": "REST8",
+      "name": "Barbeque Nation",
+      "image": "https://i.pinimg.com/736x/de/54/ce/de54ce0b42afd42de169d930a26f2779.jpg",
+      "famousDish": "Grill Buffet",
+      "rating": 4.7,
+      "location": "Jubilee Hills, Hyderabad",
+      "deliveryTime": "40 mins"
+    },
+    {
+      "id": "REST9",
+      "name": "Cream Stone",
+      "image": "https://i.pinimg.com/736x/bf/dc/4a/bfdc4ada6591dca488412f96d47f9216.jpg",
+      "famousDish": "Ice Cream Sundae",
+      "rating": 4.8,
+      "location": "Gachibowli, Hyderabad",
+      "deliveryTime": "20 mins"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

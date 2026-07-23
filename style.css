@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:10px;
+    align-items:center;
+    justify-content:space-between;
+     padding-top: 40px;
+     padding: 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo img{
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.logo img:hover{
+    transform: rotate(8deg) scale(1.08);
+    box-shadow: 0 0 20px orange;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 0 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.nav-link:hover{
+    background-color: orangered;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,69,0,0.4);
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    display: none;
+
+    width: 700px;
+    background: white;
+    padding: 20px;
+
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop-card{
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.drop-card img{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.drop-card p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.drop-card:hover{
+    transform: scale(1.05);
+}
+
+.drop-card:hover p{
+    color: orangered;
+}
+.navbar form{
+    display: flex;
+    align-items: center;
+     gap:5px;
+}
+input[type="search"]{
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    transition: 0.3s;
+}
+
+input[type="search"]:hover,
+input[type="search"]:focus{
+    border-color: orangered;
+    box-shadow: 0 0 10px rgba(255,69,0,0.4);
+}
+button{
+    padding: 8px 15px;
+    margin-left: 8px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: orangered;
+    transform: scale(1.05);
+}
+.cart{
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.cart:hover{
+    color: orange;
+    transform: scale(1.3);
+}
+.matter{
+    position: relative;
+    width: 100%;
+}
+
+.image1{
+     width:100%;
+    max-width:100%;
+    height:600px;
+    object-fit:cover;
+    display:block;
+    padding:0 30px;
+}
+
+.content{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    color: white;
+    text-align: left;
+    
+}
+
+.content h1{
+    font-size: 55px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.content h1:hover{
+    color: orange;
+    transform: scale(1.05) translateY(-5px);
+    text-shadow: 0 0 20px rgba(255,165,0,0.8);
+}
+
+.content p{
+    font-size: 28px;
+    width: 500px;
+    transition: all 0.4s ease;
+    cursor: pointer;  
+}
+.content p:hover{
+    color: #ffe9b3;
+    transform: translateX(10px);
+}
+.recipe-section-heading{
+    text-align: center;
+    padding: 50px 80px 20px;
+}
+
+.recipe-section-heading h2{
+    font-size: 42px;
+    color: orangered;
+    margin-bottom: 15px;
+    font-weight: bold;
+     transition: all 0.4s ease;
+    cursor: pointer;
+}
+.recipe-section-heading h2:hover{
+    color: darkorange;
+    transform: scale(1.08);
+}
+
+.recipe-section-heading p:hover{
+    color: #333;
+}
+
+.recipe-section-heading p{
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.reciepes{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 25px;
+    padding: 40px 30px;
+}
+
+.recipe-card{
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+.recipe-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(255,140,0,0.35);
+}
+
+.recipe-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+.recipe-card:hover img{
+    transform: scale(1.08);
+}
+
+.recipe-card h1{
+    font-size: 24px;
+    padding: 18px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.recipe-card:hover h1{
+    color: orangered;
+}
+.content-1{
+    text-align: center;
+    padding: 60px 80px 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.content-1 h2{
+    font-size: 42px;
+    color: orangered;
+    margin-bottom: 15px;
+}
+.content-1 p{
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+.content-1 h2:hover{
+    color: darkorange;
+    transform: scale(1.08);
+}
+
+.content-1 p:hover{
+    color: #333;
+}
+
+.chef-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.chef-card{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.chef-card:hover{
+    transform: translateY(-10px);
+     box-shadow: 0 15px 30px rgba(255,140,0,0.35);
+}
+
+.chef-card img{
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.chef-card:hover img{
+    transform: scale(1.08);
+}
+
+.chef-info{
+    padding: 20px;
+}
+
+.chef-info h3{
+    color: orangered;
+    font-size: 28px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.chef-info h4{
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.chef-info p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+.chef-card:hover h3{
+    color: orangered;
+}
+
+.world-class-heading{
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.world-class-heading h1{
+    font-size: 42px;
+    color: orangered;
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.world-class-heading p{
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.world-class-heading h1:hover{
+    color: darkorange;
+    transform: scale(1.08);
+}
+
+.world-class-heading p:hover{
+    color: #333;
+}
+
+.world-class-container{
+    display: grid;
+     grid-template-columns:repeat(3,1fr);
+    gap: 35px;
+    padding: 30px;
+}
+.food-card{
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+.food-card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(255, 144,0, 0.4);
+
+}
+
+
+.food-card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: 0.4s;
+}
+.food-card:hover img{
+    transform: scale(1.08);
+}
+
+.food-card h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;          
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.3s;
+}
+.food-card:hover h3{
+    color: orangered;
+}
+.food-card:nth-child(5) img{
+    object-position: center;
+   
+}
+
+.food-card:nth-child(4) img{
+    object-position: center;
+}
+.food-card:nth-child(6) img{
+    object-position: center top;
+}
+.table-section{
+    width:95%;
+    margin:70px auto;
+}
+
+.table-section h2{
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:40px;
+    color:#222;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.table-section h2:hover{
+    color: darkorange;
+    transform: scale(1.08);
+}
+
+.table-items{
+    display:grid;
+     grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    transition: 0.4s;
+}
+
+.table-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255,140,0,0.35);
+}
+
+.table-item img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    transition: 0.4s;
+}
+
+.table-item:hover img{
+    transform: scale(1.08);
+}
+.table-item h3{
+    font-size:34px;
+    font-weight:700;
+    color:#222;
+    margin-top:15px;
+    transition: 0.3s;
+}
+.table-item:hover h3{
+color: orangered;
+}
+.footer-class{
+    background:#222;
+    color:white;
+    padding:50px 40px 20px;
+    margin-top:60px;
+    border-top:5px solid orangered;
+}
+
+.footer-class hr{
+    border:none;
+    height:2px;
+    background:orangered;
+    margin:30px 0;
+}
+
+.footer-class footer{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.footer-class footer h3{
+    color:orange;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.footer-class footer p{
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.footer-content div{
+    min-width:220px;
+}
+
+.footer-content h3,
+.footer-content h3{
+    color:orange;
+    margin-bottom:18px;
+    font-size:24px;
+}
+
+.footer-content p{
+    color:#ddd;
+    margin:12px 0;
+    font-size:17px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.footer-content p:hover{
+    color:orange;
+    transform:translateX(8px);
+}
+
+.footer-content i{
+    color:orange;
+    margin-right:10px;
+    font-size:18px;
+}
+
+.copyright{
+    text-align:center;
+    color:#bbb;
+    margin-top:20px;
+    font-size:16px;
+}
+
+.policy{
+    text-align:center;
+    color:#ddd;
+    margin-top:10px;
+    font-size:16px;
+}
+
+.policy i{
+    color:orange;
+}
+/* Hide menu icon on desktop */
+.menu-toggle{
+    display:none;
+    font-size:35px;
+    cursor:pointer;
+    color:orangered;
+}
+
+/* Tablet & Mobile */
+@media (max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.menu-toggle{
+    display:block;
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.navbar .nav-link,
+.navbar .dropdown,
+.navbar form,
+.navbar .cart{
+    display:none;
+}
+
+.navbar.active .nav-link,
+.navbar.active .dropdown,
+.navbar.active form,
+.navbar.active .cart{
+    display:block;
+}
+
+.navbar.active form{
+    display:flex;
+}
+
+.navbar input{
+    width:100%;
+}
+
+.image1{
+    width:100%;
+    height:300px;
+    padding:0;
+}
+
+.content{
+    left:20px;
+    top:60px;
+}
+
+.content h1{
+    font-size:34px;
+}
+
+.content p{
+    width:100%;
+    font-size:18px;
+}
+
+.reciepes{
+    grid-template-columns:1fr;
+}
+
+.chef-section{
+    flex-direction:column;
+}
+
+.chef-card{
+    width:100%;
+    flex-direction:column;
+}
+
+.chef-card img{
+    width:100%;
+    height:250px;
+}
+
+.world-class-container{
+    grid-template-columns:1fr;
+}
+
+.table-items{
+    grid-template-columns:1fr;
+}
+
+.footer-content{
+    flex-direction:column;
+}
+
+.dropdown-content{
+    display:none !important;
+}
+
+}

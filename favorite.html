@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Page</title>
+    <link rel="stylesheet" href="favorite.css">
+</head>
+<body>
+    <div class="top-bar">
+          <a href="dashboard.html" class="back-btn">← Back</a>
+          <div class="search-box">
+        <input type="text" id="search" placeholder="Search Favorite recipes..."onkeyup="searchRecipe()">
+        <button onclick="searchRecipe()">
+            <i class="bi bi-search"></i> Search
+        </button>
+          </div>
+    
+    </div>
+   <div class="hero-box">
+    <div class="heading">
+        <span class="top-icon"> 🍩 🍝 🥘 🍜 🍛 🍨</span>
+
+        <h1>Your Food Paradise</h1>
+
+        <p>
+            A collection of your most-loved meals, ready whenever you're hungry.
+        </p>
+
+        <div class="line"></div>
+    </div>
+</div>
+    <div id="favorite-container"></div>
+     <script src="favorite.js"></script>
+</body>
+</html>
