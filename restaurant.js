@@ -2,7 +2,7 @@ const currentUser = localStorage.getItem("currentUser");
 const cartKey = `cart_${currentUser}`;
 let allRestaurants=[];
 async function loadRestaurants(){
-    let res=await fetch("http://localhost:3000/restaurants");
+    let res=await fetch("https://foodiez-api2.onrender.com/restaurants");
     let data=await res.json();
     allRestaurants=data;
     displayRestaurants(allRestaurants);
@@ -66,7 +66,7 @@ function ordernow(name){
      alert(`🎉  ${name} Order Placed Successfully!`)
 }
 function addtocart(id){
-    fetch(`http://localhost:3000/restaurants/${id}`)
+    fetch(`https://foodiez-api2.onrender.com/restaurants/${id}`)
     .then(res=>res.json())
     .then(restaurant=>{
         let cart=JSON.parse(localStorage.getItem(cartKey))||[]

@@ -18,7 +18,7 @@ async function savedata(event) {
         password: password
     };
 
-    let res = await fetch("http://localhost:3000/users", {
+    let res = await fetch("https://foodiez-api2.onrender.com/users", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

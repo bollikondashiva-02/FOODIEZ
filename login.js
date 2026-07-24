@@ -2,7 +2,7 @@ async function login(){
     let email=document.getElementById("emailid").value;
     let password=document.getElementById("Password").value;
 
-    let res =await fetch("http://localhost:3000/users")
+    let res =await fetch("https://foodiez-api2.onrender.com/users")
     let data=await res.json();
     let founduser=false;
     data.forEach(element => {

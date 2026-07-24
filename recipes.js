@@ -3,7 +3,7 @@ const cartKey = `cart_${currentUser}`;
 const favoriteKey = `favorites_${currentUser}`;
 let allRecipes=[]
 async function loadRecipes(){
-    let res=await fetch("http://localhost:3000/recipes");
+    let res=await fetch("https://foodiez-api2.onrender.com/recipes");
     let data= await res.json();
    allRecipes=data;
     displayRecipes(allRecipes);
@@ -56,7 +56,7 @@ function ordernow(name){
   alert(`🎉  ${name} Order Placed Successfully!`)
 }
 function addtofavorite(id){
-  fetch(`http://localhost:3000/recipes/${id}`)
+  fetch(`https://foodiez-api2.onrender.com/recipes/${id}`)
   .then(res=>res.json())
   .then(recipe=>{
     let favorites=JSON.parse(localStorage.getItem(favoriteKey)) || [];
@@ -71,7 +71,7 @@ function addtofavorite(id){
   })
 }
 function addtocart(id){
-  fetch(`http://localhost:3000/recipes/${id}`)
+  fetch(`https://foodiez-api2.onrender.com/recipes/${id}`)
   .then(res=>res.json())
   .then(recipe=>{
     let cart=JSON.parse(localStorage.getItem(cartKey))||[];
